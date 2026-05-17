@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jarves AI</string>
+    <string name="hint_message">Nima yordam kerak?</string>
+    <string name="status_active">● Faol</string>
+    <string name="status_thinking">● O\'ylamoqda...</string>
+    <string name="btn_send">Yuborish</string>
+    <string name="btn_mic">Ovozli kiritish</string>
+    <string name="welcome_message">Salom! Men Jarves AI man. Qanday yordam bera olaman?</string>
+</resources>

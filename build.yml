@@ -1,0 +1,35 @@
+name: Build Jarves AI APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodni yuklab olish
+        uses: actions/checkout@v3
+
+      - name: Java o'rnatish
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Android SDK o'rnatish
+        uses: android-actions/setup-android@v2
+
+      - name: Gradle ruxsat berish
+        run: chmod +x gradlew
+
+      - name: APK yasash
+        run: ./gradlew assembleDebug
+
+      - name: APK ni saqlash
+        uses: actions/upload-artifact@v3
+        with:
+          name: JarvesAI-APK
+          path: app/build/outputs/apk/debug/app-debug.apk
