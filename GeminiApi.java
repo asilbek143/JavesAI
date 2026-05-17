@@ -25,7 +25,7 @@ public class GeminiApi {
 
     // Bepul Gemini API key olish: https://aistudio.google.com/app/apikey
     // Quyidagi o'rinni o'z API kalingiz bilan almashtiring:
-    private static final String API_KEY = "YOUR_GEMINI_API_KEY_HERE";
+    private static final String API_KEY = "AIzaSyA3miqh23A-qhj_EtSDsOXjpoO7tNiU3s0";
     private static final String API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=" + API_KEY;
 
     private static final String SYSTEM_PROMPT =
